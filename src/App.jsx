@@ -20,6 +20,7 @@ function App() {
   const handleHome = () => setStep(3);
   const handleBook = () => setStep(4);
   const handleTravels = () => setStep(5);
+  const handleAccount = () => setStep(6);
 
   return (
     <>
