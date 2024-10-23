@@ -9,7 +9,7 @@ function App() {
   const [step, setStep] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => setStep(1), 3000); // 3s splash
+    const timer = setTimeout(() => setStep(1), 3000); 
     return () => clearTimeout(timer);
   }, []);
 
