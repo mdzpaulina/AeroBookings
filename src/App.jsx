@@ -51,7 +51,6 @@ function SignIn({ onLogin }) {
   );
 }
 
-
 function HomePage() {
   return (
     <div className="home-page">
@@ -136,7 +135,6 @@ function HomePage() {
       <footer className="footer">
         <button>Home</button>
         <button>Orders</button>
-        <button>Deals</button>
         <button>Account</button>
       </footer>
     </div>
