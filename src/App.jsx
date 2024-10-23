@@ -53,18 +53,6 @@ function SignIn({ onLogin }) {
 
 
 function HomePage() {
-
-  const handleOrderClick = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/notify'); // Adjust the URL as needed
-      const data = await response.json();
-      alert(data.ok ? "Notification sent!" : "Failed to send notification."); // Check response
-    } catch (error) {
-      console.error("Error sending notification:", error);
-      alert("Failed to send notification.");
-    }
-  };
-
   return (
     <div className="home-page">
       <header className="header">
@@ -147,7 +135,7 @@ function HomePage() {
 
       <footer className="footer">
         <button>Home</button>
-        <button onClick={handleOrderClick}>Orders</button>
+        <button>Orders</button>
         <button>Deals</button>
         <button>Account</button>
       </footer>

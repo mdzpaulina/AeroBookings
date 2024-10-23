@@ -23,7 +23,13 @@ def send_telegram_message(message: str):
 
 @app.route('/notify', methods=['GET'])
 def notify():
-    message = "This is a notification from your bot!"
+    message = "Orden confrimada!"
+    response = send_telegram_message(message)
+    return jsonify(response)
+
+@app.route('/sign_up', methods=['GET'])
+def sign_up():
+    message = "Hola buenos dias, este sera tu ChatBot para VLMG"
     response = send_telegram_message(message)
     return jsonify(response)
 
