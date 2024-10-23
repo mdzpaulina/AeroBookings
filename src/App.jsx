@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import PropTypes from 'prop-types';
 import logo from './assets/vgml.jpg'
 import pulau from './assets/pulau.jpeg'
 import bromo from './assets/bromo.jpg'
