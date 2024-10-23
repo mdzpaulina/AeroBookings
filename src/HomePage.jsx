@@ -2,6 +2,7 @@ import pulau from './assets/pulau.jpeg'
 import bromo from './assets/bromo.jpg'
 import avatar from './assets/avatar.jpeg'
 import labuan from './assets/labuan.jpeg'
+import Recommendations from './Recommendations.jsx'; 
 import './HomePage.css'
 
 function HomePage({ onClickBook, onClickTravels, onClickAccount }) {
@@ -53,37 +54,7 @@ function HomePage({ onClickBook, onClickTravels, onClickAccount }) {
         </div>
       </div>
 
-      <section className="recommendations">
-        <div className="carousel-container">
-          <h3>Journey together</h3>
-          <div className="carousel">
-            <div className="card">
-              <img src={bromo} alt="Mount Bromo" />
-              <h4>Mount Bromo</h4>
-              <p>Volcano in East Java</p>
-              <p>★ 4.9</p>
-              <p>Start from $150/pax</p>
-              <button>3D2N</button>
-            </div>
-            <div className="card">
-              <img src={pulau} alt="Labengki Sombori" />
-              <h4>Labengki Sombori</h4>
-              <p>Islands in Sulawesi</p>
-              <p>★ 4.8</p>
-              <p>Start from $250/pax</p>
-              <button>3D2N</button>
-            </div>
-            <div className="card">
-              <img src={labuan} alt="Sailing Komodo" />
-              <h4>Sailing Komodo</h4>
-              <p>Labuan Bajo</p>
-              <p>★ 4.8</p>
-              <p>Start from $200/pax</p>
-              <button>3D2N</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Recommendations /> 
 
       <footer className="footer">
         <button>Home</button>
