@@ -17,7 +17,7 @@ function App() {
 
   const handleGetStarted = () => setStep(2);
   const handleLogin = () => setStep(3);
-   const handleHome = () => setStep(3);
+  const handleHome = () => setStep(3);
   const handleBook = () => setStep(4);
   const handleTravels = () => setStep(5);
 
@@ -33,4 +33,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
