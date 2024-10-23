@@ -2,6 +2,10 @@ import logo from './assets/logo.png'
 import './Book.css'
 
 function Book({ onClickHome, onClickTravels, onClickAccount }) {
+  const handleSearchFlights = () => {
+    alert('Flights searched!');
+  };
+
   return (
     <div className="orders-page">
       <div className="orders-container">
@@ -47,7 +51,7 @@ function Book({ onClickHome, onClickTravels, onClickAccount }) {
           <input type="date" />
         </div>
 
-        <button className="submit-order">Search Flights</button>
+        <button className="submit-order" onClick={handleSearchFlights}>Search Flights</button>
       </div>
 
       <footer className="footer">
