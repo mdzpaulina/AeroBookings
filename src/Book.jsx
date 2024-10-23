@@ -1,3 +1,4 @@
+import logo from './assets/logo.png'
 import './Book.css'
 
 function Book({ onClickHome, onClickTravels, onClickAccount }) {
