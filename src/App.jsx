@@ -37,8 +37,13 @@ function SplashScreen() {
 function GetStarted({ onClick }) {
   return (
     <div className="get-started">
-      <h1>VGML go</h1>
-      <button onClick={onClick}>Your Journey Starts Here</button>
+      <div className="get-started-logo">
+        <h1>VGML go</h1>
+      </div>
+      <div className="bottom-card">
+        <h2>Ready to explore beyond boundaries?</h2>
+        <button onClick={onClick}>Your Journey Starts Here</button>
+      </div>
     </div>
   );
 }
@@ -68,7 +73,6 @@ function SignIn({ onLogin }) {
     </div>
   );
 }
-
 
 function HomePage() {
   const [selectedDestination, setSelectedDestination] = useState(null);

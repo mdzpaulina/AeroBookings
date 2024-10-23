@@ -35,17 +35,27 @@ body {
   margin-bottom: 10px; /* Reduce el espacio debajo de la imagen */
 }
 
-.get-started {
+.get-started{
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background: url('./assets/background.jpg') no-repeat center center/cover;
 }
 
+.get-started-logo {
+  text-align: center;
+  margin-top: 250px;
+}
+
 .get-started h1 {
   color: white;
+  font-size: 65px;
+}
+
+.get-started h2 {
+  font-size: 28px;
 }
 
 .get-started button {
@@ -57,6 +67,15 @@ body {
   font-size: 18px;
   cursor: pointer;
   margin-bottom: 30px;
+}
+
+.bottom-card {
+  background-color: white; /* Fondo blanco para la tarjeta */
+  padding: 40px;
+  
+  border-radius: 30px 30px 0 0; /* Solo redondea las esquinas superiores */
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sign-in {
@@ -192,10 +211,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.header .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
 }
 
 .user-info {
+  flex-direction: row;
   display: flex;
   align-items: center;
 }
@@ -203,18 +231,14 @@ body {
 .user-info h2 {
   font-size: 1.5rem;
   margin-right: 10px;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  color: white;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   width: 90%;
+  padding: 10px;
 }
 
 .search-bar input {
@@ -258,7 +282,7 @@ body {
   border-radius: 15px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
-  max-width: 400px;
+  max-width: 650px;
   margin: auto;
 }
 
