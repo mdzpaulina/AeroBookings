@@ -11,7 +11,7 @@ function App() {
   const [step, setStep] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => setStep(1), 2000); 
+    const timer = setTimeout(() => setStep(1), 2000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,8 +27,8 @@ function App() {
       {step === 1 && <GetStarted onClick={handleGetStarted} />}
       {step === 2 && <SignIn onLogin={handleLogin} />}
       {step === 3 && <HomePage onClickBook={handleBook} onClickTravels={handleTravels} onClickAccount={handleAccount} />}
-      {step === 4 && <Book onClickHome={handleHome} onClickTravels={handleTravels} onClickAccount={handleAccount}/>}
-      {step === 5 && <Travels onClickHome={handleHome} onClickBook={handleBook} onClickAccount={handleAccount}/>}
+      {step === 4 && <Book onClickHome={handleHome} onClickTravels={handleTravels} onClickAccount={handleAccount} />}
+      {step === 5 && <Travels onClickHome={handleHome} onClickBook={handleBook} onClickAccount={handleAccount} />}
     </>
   );
 }
