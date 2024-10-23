@@ -258,7 +258,7 @@ body {
   border-radius: 15px; /* Bordes redondeados */
   padding: 20px; /* Espaciado interno */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
-  max-width: 400px;
+  max-width: 650px;
   margin: auto;
 }
 
