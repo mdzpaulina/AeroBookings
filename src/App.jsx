@@ -30,17 +30,6 @@ function App() {
   const handleTravels = () => setStep(5);
   const handleAccount = () => setStep(6);
 
-  const handleOrders = () => {
-    console.log('orders click')
-  }
-
-  const handleDeals = () => {
-    console.log('deals click')
-  }
-  const handleAccount = () => {
-    console.log('account click')
-  }
-
   return (
     <>
       {step === 0 && <SplashScreen />}
@@ -51,12 +40,12 @@ function App() {
           <AdminPage />
         ) : (
           <HomePage onClickOrders={handleOrders} onClickDeals={handleDeals} onClickAccount={handleAccount} />
-        
+
         )
       )}
       {step === 4 && <Book onClickHome={handleHome} onClickTravels={handleTravels} onClickAccount={handleAccount} />}
       {step === 5 && <Travels onClickHome={handleHome} onClickBook={handleBook} onClickAccount={handleAccount} />}
-      {step === 6 && <Account onClickHome={handleHome} onClickBook={handleBook} onClickTravels={handleTravels}/>}
+      {step === 6 && <Account onClickHome={handleHome} onClickBook={handleBook} onClickTravels={handleTravels} />}
 
     </>
   );
