@@ -192,10 +192,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.header .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
 }
 
 .user-info {
+  flex-direction: row;
   display: flex;
   align-items: center;
 }
@@ -203,18 +212,14 @@ body {
 .user-info h2 {
   font-size: 1.5rem;
   margin-right: 10px;
-}
-
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  color: white;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   width: 90%;
+  padding: 10px;
 }
 
 .search-bar input {
