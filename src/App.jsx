@@ -30,6 +30,7 @@ function App() {
       {step === 3 && <HomePage onClickBook={handleBook} onClickTravels={handleTravels} onClickAccount={handleAccount} />}
       {step === 4 && <Book onClickHome={handleHome} onClickTravels={handleTravels} onClickAccount={handleAccount} />}
       {step === 5 && <Travels onClickHome={handleHome} onClickBook={handleBook} onClickAccount={handleAccount} />}
+      {step === 6 && <Account onClickHome={handleHome} onClickBook={handleBook} onClickTravels={handleTravels}/>}
     </>
   );
 }
