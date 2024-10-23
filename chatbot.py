@@ -1,62 +1,31 @@
-from typing import Final
-from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-TOKEN: Final = "7903035029:AAGEQG_nwIpM2J36XZO3i-g341Erb2DIvZ4"
-BOT_USERNAME: Final = "@vlmg_bot"
+from flask import Flask, jsonify
+from flask_cors import CORS
+import requests
 
-# Commands
-async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hello, I'm a bot!")
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
-async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Help message")
-
-# Responses
-def handle_response(text: str) -> str:
-    processed_text = text.lower()
-
-    if "hello" in processed_text:
-        return "Hey there!"
-    if "bye" in processed_text:
-        return "Goodbye!"
+with open("token.txt") as f:
+    TOKEN : str = f.readline().strip()  # Replace with your bot token (will be encrypted in production)
     
-    return "I don't understand that."
+with open("chatId.txt") as f:
+    CHAT_ID : str = f.readline().strip()  # Replace with your chat ID (will be encrypted in production with in data base)
 
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    message_type : str = update.message.chat.type
-    text : str = update.message.text
+def send_telegram_message(message: str):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    payload = {
+        "chat_id": CHAT_ID,
+        "text": message,
+        "parse_mode": "HTML"  # Optional: allows for HTML formatting
+    }
+    response = requests.post(url, json=payload)
+    return response.json()  # Return the response for debugging
 
-    print(f"User ({update.message.chat.id}) in {message_type}: {text}")
-    
-    if message_type == "group":
-        if BOT_USERNAME in text:
-            new_text : str  = text.replace(BOT_USERNAME, "").strip()
-            response : str = handle_response(text)
-        else:
-            return
-    else:
-        response : str = handle_response(text)
-        
-    print("Bot: ", response)
-    await update.message.reply_text(response)
-
-async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    print(f"Update {update} caused error: {context.error}")
+@app.route('/notify', methods=['GET'])
+def notify():
+    message = "This is a notification from your bot!"
+    response = send_telegram_message(message)
+    return jsonify(response)
 
 if __name__ == "__main__":
-    print("Bot starting...")
-    app = Application.builder().token(TOKEN).build()
-
-    # Commands
-    app.add_handler(CommandHandler("start", start_command))
-    app.add_handler(CommandHandler("help", help_command))
-
-    # Messages
-    app.add_handler(MessageHandler(filters.TEXT, handle_message))
-    
-    # Error
-    app.add_error_handler(error)
-    
-    # Polls the bot
-    print("Polling...")
-    app.run_polling(poll_interval=3)
+    app.run(port=5000)
