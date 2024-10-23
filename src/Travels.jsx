@@ -44,7 +44,7 @@ function Travels({ onClickHome, onClickBook, onClickAccount }) {
         <footer className="footer">
           <button onClick = {onClickHome}>Home</button>
           <button onClick = {onClickBook}>Book</button>
-          <button>Deals</button>
+          <button>Travels</button>
           <button onClick = {onClickAccount}>Account</button>
         </footer>
       </div>
