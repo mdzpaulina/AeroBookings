@@ -4,7 +4,7 @@ import avatar from './assets/avatar.jpeg'
 import labuan from './assets/labuan.jpeg'
 import './HomePage.css'
 
-function HomePage() {
+function HomePage({onClickOrders, onClickDeals, onClickAccount}) {
     return (
       <div className="home-page">
         <header className="header">
@@ -87,9 +87,9 @@ function HomePage() {
   
         <footer className="footer">
           <button>Home</button>
-          <button>Orders</button>
-          <button>Deals</button>
-          <button>Account</button>
+          <button onClick = {onClickOrders}>Orders</button>
+          <button onClick = {onClickDeals}>Deals</button>
+          <button onClick = {onClickAccount}>Account</button>
         </footer>
       </div>
     );
