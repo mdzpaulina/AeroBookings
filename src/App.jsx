@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
+import logo from './assets/vgml.jpg'
 import './App.css';
+
 
 function SplashScreen() {
   return (
     <div className="splash-screen">
+      <img src={logo} alt="Logo" />
       <h1>VGML go</h1>
       <p>Easy book, Easy go!</p>
-      <img src="./logo.png" alt="Logo" />
     </div>
   );
 }
@@ -53,7 +55,7 @@ function HomePage() {
       <header className="header">
         <div className="user-info">
           <h2>Hi, @User</h2>
-          <img src="./assets/avatar.jpeg" alt="User Avatar" className="avatar"/>
+          <img src="avatar.jpeg" alt="User Avatar" className="avatar"/>
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Where to go?" />
@@ -97,23 +99,34 @@ function HomePage() {
     </div>
 
       <section className="recommendations">
+        <div className="carousel-container">
         <h3>Journey together</h3>
-        <div className="cards">
+        <div className="carousel">
           <div className="card">
-            <img src="./assets/mount-bromo.jpg" alt="Mount Bromo"/>
-            <p>Mount Bromo</p>
-            <p>From $150/pax</p>
+            <img src="bromo.jpg" alt="Mount Bromo" />
+            <h4>Mount Bromo</h4>
+            <p>Volcano in East Java</p>
+            <p>★ 4.9</p>
+            <p>Start from $150/pax</p>
+            <button>3D2N</button>
           </div>
-          <div className="card">
-            <img src="./assets/labengki.jpg" alt="Labengki"/>
-            <p>Labengki Sombori</p>
-            <p>From $250/pax</p>
-          </div>
-          <div className="card">
-            <img src="./assets/sailing-komodo.jpg" alt="Sailing Komodo"/>
-            <p>Sailing Komodo</p>
-            <p>From $200/pax</p>
-          </div>
+        <div className="card">
+          <img src="pulau.jpeg" alt="Labengki Sombori" />
+          <h4>Labengki Sombori</h4>
+          <p>Islands in Sulawesi</p>
+          <p>★ 4.8</p>
+          <p>Start from $250/pax</p>
+          <button>3D2N</button>
+        </div>
+        <div className="card">
+          <img src="path-to-image-3.jpg" alt="Sailing Komodo" />
+          <h4>Sailing Komodo</h4>
+          <p>Labuan Bajo</p>
+          <p>★ 4.8</p>
+          <p>Start from $200/pax</p>
+          <button>3D2N</button>
+        </div>
+        </div>
         </div>
       </section>
 
