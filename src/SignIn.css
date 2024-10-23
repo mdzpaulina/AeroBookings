@@ -1,0 +1,112 @@
+.sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--light-green);
+  }
+  
+  .sign-in form {
+    background-color: var(--white);
+    padding: 40px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    text-align: center;
+  }
+  
+  .sign-in input {
+    display: block;
+    margin: 15px 0;
+    padding: 15px; /* Aumentar espacio dentro del input */
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: #333;
+    font-size: 1rem; /* Aumentar el tamaño del texto en los inputs */
+  }
+  
+  .sign-in button {
+    width: 100%;
+    padding: 15px; /* Aumentar tamaño del botón */
+    background-color: var(--medium-green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+    cursor: pointer;
+    margin-bottom: 25px;
+  }
+  
+  .sign-in .highlight {
+    color: var(--medium-green);
+  }
+  
+  .alternative-sign-in {
+    margin-bottom: 20px;
+  }
+  
+  .alternative-sign-in p {
+    margin: 0;
+    color: #8E8E8E;
+    font-size: 1rem; /* Ajuste en tamaño de texto */
+  }
+  
+  .sign-in-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .sign-in-options button {
+    width: 30%;
+    padding: 12px; /* Aumentar tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    cursor: pointer;
+    font-size: 1rem; /* Aumentar tamaño de texto en los botones */
+  }
+  
+  .no-account {
+    font-size: 1rem;
+    color: #8E8E8E;
+    margin-bottom: 15px;
+  }
+  
+  .sign-in h2 {
+    font-size: 2.2rem; /* Aumentar tamaño del título */
+    color: var(--dark-green);
+    margin-bottom: 15px;
+  }
+  
+  .sign-in h4 {
+    font-size: 1.2rem;
+    color: #8E8E8E;
+    margin-bottom: 25px;
+  }
+  
+  .sign-in input::placeholder {
+    color: #B0B0B0;
+  }
+  
+  .sign-in a.forgot-password {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+    font-size: 0.95rem; /* Aumentar el tamaño del texto */
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .sign-up {
+    background-color: var(--medium-green);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }

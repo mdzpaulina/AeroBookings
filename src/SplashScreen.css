@@ -1,0 +1,16 @@
+.splash-screen {
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex;
+    color:white;
+    font-size: 25px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2F5D62;
+  }
+  
+  .splash-screen img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px; /* Reduce el espacio debajo de la imagen */
+  }
