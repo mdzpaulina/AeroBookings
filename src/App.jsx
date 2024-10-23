@@ -39,7 +39,7 @@ function App() {
         role === 'admin' ? (
           <AdminPage />
         ) : (
-          <HomePage onClickOrders={handleOrders} onClickDeals={handleDeals} onClickAccount={handleAccount} />
+          <HomePage onClickBook={handleBook} onClickTravels={handleTravels} onClickAccount={handleAccount} />
 
         )
       )}
