@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types';
 import logo from './assets/vgml.jpg'
+import pulau from './assets/pulau.jpeg'
+import bromo from './assets/bromo.jpg'
+import avatar from './assets/avatar.jpeg'
+import labuan from './assets/labuan.jpeg'
 import './App.css';
 
 
@@ -55,7 +59,7 @@ function HomePage() {
       <header className="header">
         <div className="user-info">
           <h2>Hi, @User</h2>
-          <img src="avatar.jpeg" alt="User Avatar" className="avatar"/>
+          <img src={avatar} alt="User Avatar" className="avatar"/>
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Where to go?" />
@@ -103,7 +107,7 @@ function HomePage() {
         <h3>Journey together</h3>
         <div className="carousel">
           <div className="card">
-            <img src="bromo.jpg" alt="Mount Bromo" />
+            <img src={bromo} alt="Mount Bromo" />
             <h4>Mount Bromo</h4>
             <p>Volcano in East Java</p>
             <p>★ 4.9</p>
@@ -111,7 +115,7 @@ function HomePage() {
             <button>3D2N</button>
           </div>
         <div className="card">
-          <img src="pulau.jpeg" alt="Labengki Sombori" />
+          <img src={pulau} alt="Labengki Sombori" />
           <h4>Labengki Sombori</h4>
           <p>Islands in Sulawesi</p>
           <p>★ 4.8</p>
@@ -119,7 +123,7 @@ function HomePage() {
           <button>3D2N</button>
         </div>
         <div className="card">
-          <img src="path-to-image-3.jpg" alt="Sailing Komodo" />
+          <img src={labuan} alt="Sailing Komodo" />
           <h4>Sailing Komodo</h4>
           <p>Labuan Bajo</p>
           <p>★ 4.8</p>
