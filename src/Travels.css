@@ -1,0 +1,102 @@
+/* General Styles */
+.travels-page {
+    min-height: 110vh; 
+    background-image: url('./assets/fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Arial', sans-serif;
+    color: #064941;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.travels-page h1 {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabs Styles */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .tabs button {
+    background-color: #07374a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: #2a9d8f;
+    color: white;
+  }
+  
+  .tabs button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Trip Card Styles */
+  .travels-section {
+    margin-bottom: 50px;
+  }
+  
+  .travels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .trip-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(60% - 10px);
+  }
+  
+  .trip-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .trip-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .reserved {
+    background-color: #DFEEEA;
+    color: #213547;
+  }
+  
+  .completed {
+    background-color: #DFEEEA;
+    color: #213547;
+  }
+  
+  .no-travels-message {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    margin-top: 20px;
+  }
