@@ -39,7 +39,7 @@ function SignIn({ onLogin }) {
             <button className="facebook-sign-in">Facebook</button>
           </div>
         </div>
-        <p className="no-account">I don't have an account?</p>
+        <p className="no-account">Don't have an account?</p>
         <button className="sign-up">Sign Up</button>
       </form>
     </div>
@@ -50,14 +50,83 @@ function SignIn({ onLogin }) {
 function HomePage() {
   return (
     <div className="home-page">
-      <h2>Hi, User</h2>
-      <div className="search-bar">
-        <input type="text" placeholder="Where to go?" />
-        <button>Search</button>
+      <header className="header">
+        <div className="user-info">
+          <h2>Hi, @User</h2>
+          <img src="./assets/avatar.jpeg" alt="User Avatar" className="avatar"/>
+        </div>
+        <div className="search-bar">
+          <input type="text" placeholder="Where to go?" />
+          <button>Search</button>
+        </div>
+      </header>
+
+    <div className="flight-card">
+      <div className="flight-header">
+        <span className="badge">Upcoming</span>
+        <span className="flight-date">24 March 2024</span>
       </div>
+      
+      <div className="flight-details">
+        <div className="flight-location">
+          <strong>CGK</strong>
+          <p>05:30</p>
+          <i className="fas fa-plane-departure flight-icon"></i>
+        </div>
+        
+        <div className="flight-duration">
+          <p>1h 30m</p>
+          <hr />
+        </div>
+
+        <div className="flight-location">
+          <strong>DPS</strong>
+          <p>06:30</p>
+          <i className="fas fa-plane-arrival flight-icon"></i>
+        </div>
+      </div>
+
+      <div className="flight-info">
+        <p>Sentosa Air • Economy • Direct</p>
+      </div>
+
+      <div className="booking-info">
+        <span>Booking ID</span>
+        <strong>ZEEBAW</strong>
+      </div>
+    </div>
+
+      <section className="recommendations">
+        <h3>Journey together</h3>
+        <div className="cards">
+          <div className="card">
+            <img src="./assets/mount-bromo.jpg" alt="Mount Bromo"/>
+            <p>Mount Bromo</p>
+            <p>From $150/pax</p>
+          </div>
+          <div className="card">
+            <img src="./assets/labengki.jpg" alt="Labengki"/>
+            <p>Labengki Sombori</p>
+            <p>From $250/pax</p>
+          </div>
+          <div className="card">
+            <img src="./assets/sailing-komodo.jpg" alt="Sailing Komodo"/>
+            <p>Sailing Komodo</p>
+            <p>From $200/pax</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <button>Home</button>
+        <button>Orders</button>
+        <button>Deals</button>
+        <button>Account</button>
+      </footer>
     </div>
   );
 }
+
 
 function App() {
   const [step, setStep] = useState(0);
