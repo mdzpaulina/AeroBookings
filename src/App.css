@@ -217,24 +217,52 @@ body {
   cursor: pointer;
 }
 
-/* Flight info card */
 .flight-info {
-  margin-bottom: 30px;
+  text-align: center;
+  color: #6C757D;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.flight-icon {
+  display: block;
+  font-size: 1.5rem;
+  margin: 5px 0;
 }
 
 .flight-card {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #E6F4F1; /* Fondo suave */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 400px;
+  margin: auto;
+}
+
+.flight-date {
+  color: #6C757D;
+  font-size: 0.9rem;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .flight-details {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
+  margin-bottom: 10px;
+}
+
+.flight-location {
+  text-align: center;
+}
+
+.flight-location strong {
+  font-size: 1.2rem;
 }
 
 .flight-details .flight-time {
@@ -243,14 +271,29 @@ body {
 }
 
 .flight-duration {
+  text-align: center;
+}
+
+.flight-duration p {
   font-size: 0.9rem;
-  color: gray;
+  color: #6C757D;
+}
+
+.flight-duration hr {
+  border: 0;
+  border-top: 1px dashed #6C757D;
+  width: 60px;
+  margin: 5px auto;
 }
 
 .booking-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  background-color: #F8F9FA;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #6C757D;
 }
 
 .recommendations h3 {
@@ -263,6 +306,13 @@ body {
   justify-content: space-between;
 }
 
+.badge {
+  background-color: #2A9D8F; /* Color del estado */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
 
 .card {
   width: 30%;
