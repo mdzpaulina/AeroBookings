@@ -1,0 +1,63 @@
+.admin-page {
+    min-height: 110vh; 
+    background-image: url('./assets/fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Arial', sans-serif;
+    color: #213547;
+    padding: 20px;
+}
+
+.admin-page h1 {
+    color: var(--white);
+}
+  
+.header-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-admin .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.admin-info {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+  
+.admin-info h2 {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: 213547;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.footer button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #2a9d8f;
+    cursor: pointer;
+}
