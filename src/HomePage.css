@@ -1,0 +1,246 @@
+.home-page {
+    min-height: 110vh; 
+    background-image: url('./assets/fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Arial', sans-serif;
+    color: #213547;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .home-page h1 {
+    color: var(--white);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info h2 {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .search-bar input {
+    background-color: white;
+    width: 85%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid var(--dark-green);
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .search-bar input::placeholder {
+    color: var(--dark-green); /* Color del texto del placeholder */
+  }
+  
+  .search-bar button {
+    padding: 12px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .flight-info {
+    text-align: center;
+    color: #6C757D;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .flight-icon {
+    display: block;
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  .flight-card {
+    background-color: #DFEEEA; /* Fondo suave */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  .flight-date {
+    color: #6C757D;
+    font-size: 0.9rem;
+  }
+  
+  .flight-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .flight-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .flight-location {
+    text-align: center;
+  }
+  
+  .flight-location strong {
+    font-size: 1.2rem;
+  }
+  
+  .flight-details .flight-time {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .flight-duration {
+    text-align: center;
+  }
+  
+  .flight-duration p {
+    font-size: 0.9rem;
+    color: #6C757D;
+  }
+  
+  .flight-duration hr {
+    border: 0;
+    border-top: 1px dashed #6C757D;
+    width: 60px;
+    margin: 5px auto;
+  }
+  
+  .booking-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8F9FA;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #6C757D;
+  }
+  
+  .carousel-container {
+    margin: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: scroll; /* Habilita el scroll horizontal */
+    gap: 20px; /* Espaciado entre tarjetas */
+    scroll-behavior: smooth; /* Suaviza el scroll */
+  }
+  
+  .recommendations h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  
+  .card button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .badge {
+    background-color: #2A9D8F; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .card {
+    width: 30%;
+    background-color: #DFEEEA;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer navigation */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #2a9d8f;
+    cursor: pointer;
+  }
