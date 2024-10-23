@@ -1,15 +1,15 @@
 import * as XLSX from 'xlsx'
 import './ExcelReader.css'
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
 function ExcelReader() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("/public/VLMG.xlsx")
+        fetch("./VLMG.xlsx")
             .then((response) => response.arrayBuffer())
             .then((buffer) => {
-                const workbook = XLSX.read(buffer, {type: 'array'});
+                const workbook = XLSX.read(buffer, { type: 'array' });
                 const worksheetName = workbook.SheetNames[0]; // Leemos la primera hoja
                 const worksheet = workbook.Sheets[worksheetName];
                 const jsonData = XLSX.utils.sheet_to_json(worksheet); // Convertimos a JSON
@@ -41,8 +41,8 @@ function ExcelReader() {
                     </tbody>
                 </table>
             )}
-      </div>
+        </div>
     );
-} 
+}
 
 export default ExcelReader;
