@@ -25,7 +25,7 @@ function App() {
       {step === 0 && <SplashScreen />}
       {step === 1 && <GetStarted onClick={handleGetStarted} />}
       {step === 2 && <SignIn onLogin={handleLogin} />}
-      {step === 3 && <HomePage onClickOrders={handleOrders} onClickDeals={handleDeals} onClickAccount={handleAccount} />}
+      {step === 3 && <HomePage onClickOrders={handleBook} onClickDeals={handleDeals} onClickAccount={handleAccount} />}
       {step === 4 && <Book onClickHome={handleHome} onClickDeals={handleDeals} onClickAccount={handleAccount}/>}
     </>
   );
