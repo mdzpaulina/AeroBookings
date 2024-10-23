@@ -50,3 +50,5 @@ function Travels({ onClickHome, onClickBook, onClickAccount }) {
       </div>
     );
 }
+
+export default Travels;
