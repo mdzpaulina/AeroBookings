@@ -1,0 +1,51 @@
+/*Deals Page*/
+.deals-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+  
+.deals-page h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+  
+.deals-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.trip-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #DFEEEA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.trip-card p{
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+.trip-card span{
+    background: #2F5D62;
+    font-size: 14px;
+    color: white;
+}
