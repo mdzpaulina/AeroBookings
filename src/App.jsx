@@ -15,13 +15,14 @@ function App() {
 
   const handleGetStarted = () => setStep(2);
   const handleLogin = () => setStep(3);
+  const handleHome = () => setStep(3);
 
   return (
     <>
       {step === 0 && <SplashScreen />}
       {step === 1 && <GetStarted onClick={handleGetStarted} />}
       {step === 2 && <SignIn onLogin={handleLogin} />}
-      {step === 3 && <HomePage />}
+      {step === 3 && <HomePage onClickOrders={handleOrders} onClickDeals={handleDeals} onClickAccount={handleAccount} />}
     </>
   );
 }
