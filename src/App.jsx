@@ -5,6 +5,7 @@ import SignIn from './SignIn.jsx'
 import HomePage from './HomePage.jsx'
 import Book from './Book.jsx'
 import Travels from './Travels.jsx'
+import Account from './Account.jsx'
 import './App.css';
 
 function App() {

@@ -1,6 +1,6 @@
 import './Account.css';
 
-function Account({ onClickHome, onClickOrders, onClickDeals }) {
+function Account({ onClickHome, onClickBook, onClickTravels}) {
     return (
       <div className="account-page">
         <h1>My Account</h1>
@@ -35,10 +35,10 @@ function Account({ onClickHome, onClickOrders, onClickDeals }) {
         </section>
   
         <footer className="footer">
-          <button onClick = {onClickHome}>Home</button>
-          <button onClick = {onClickOrders}>Orders</button>
-          <button onClick = {onClickDeals}>Deals</button>
-          <button>Account</button>
+            <button onClick={onClickHome}>Home</button> 
+            <button onClick={onClickBook}>Book</button>
+            <button onClick={onClickTravels}>Travels</button>
+            <button>Account</button>
         </footer>
       </div>
     );
