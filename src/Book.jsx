@@ -2,8 +2,15 @@ import logo from './assets/logo.png'
 import './Book.css'
 
 function Book({ onClickHome, onClickTravels, onClickAccount }) {
-  const handleSearchFlights = () => {
-    alert('Flights searched!');
+  const handleSearchFlights = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/notify'); // Adjust the URL as needed
+      const data = await response.json();
+      alert(data.ok ? "Notification sent!" : "Failed to send notification."); // Check response
+    } catch (error) {
+      console.error("Error sending notification:", error);
+      alert("Failed to send notification.");
+    }
   };
 
   return (
