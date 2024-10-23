@@ -1,0 +1,94 @@
+/*Orders Page*/
+
+.orders-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Ajusta la tipografía */
+    font-size: 16px; /* Tamaño de texto estándar */
+    color: #333; /* Color del texto */
+}
+  
+  
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.orders-container img{
+    display: none;
+}
+  
+.orders-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamaño ajustado para el título */
+    font-weight: bold; /* Negrita para resaltar el título */
+    color: #333; /* Mismo color del resto del texto */
+    height: 25%;
+}
+
+.orders-title h2{
+    margin: 0;
+}
+  
+.orders-image {
+    margin-right: 10px;
+}
+  
+.orders-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 16px; /* Asegura consistencia en el tamaño del texto */
+    font-weight: bold;
+}
+
+.orders-input p{
+    margin: 0;
+}
+  
+input, select {
+    background-color: #DFEEEA;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: inherit; /* Hereda la tipografía de la página */
+    font-size: 16px; /* Asegura consistencia en el tamaño del texto */
+    color: #333; /* Color del texto */
+}
+  
+.submit-order {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2F5D62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de texto para el botón */
+    font-family: inherit; /* Hereda la tipografía */
+    transition: all 0.3s ease;
+}
+  
+.submit-order:hover {
+    color: #333;
+    font-weight: bold;
+    background-color: #DFEEEA;
+    border: 2px solid #2F5D62;
+}
+
+.submit-order:active {
+    background-color: #2F5D62;
+}
+
+.submit-order:focus {
+    outline: none;
+}
