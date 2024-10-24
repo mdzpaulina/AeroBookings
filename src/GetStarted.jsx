@@ -4,7 +4,7 @@ function GetStarted({ onClick }) {
     return (
       <div className="get-started">
         <div className="get-started-logo">
-          <h1>VSML go</h1>
+          <h1>VLSM go</h1>
         </div>
         <div className="bottom-card">
           <h2>Ready to explore beyond boundaries?</h2>
